@@ -1,11 +1,22 @@
 [package]
 name = "imgshow"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["sunny <jinheking@gmail.com>"]
 edition = "2018"
+description="ed207a58929017bf8ff560a6ec53739cc68c6ec4"
+repository = "https://github.com/danielschemmel/build-info/"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 clap = "2.33.3"
 opencv = {version = "0.52", default-features = false, features = ["opencv-34", "buildtime-bindgen"]}
+
+#build-info = { version = "=0.0.23", path = "../build-info" }
+build-info = "0.0.23"
+
+[build-dependencies]
+#build-info-build = { version = "=0.0.23", path = "../build-info-build" }
+build-info-build = "0.0.23"
